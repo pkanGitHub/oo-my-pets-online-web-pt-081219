@@ -5,7 +5,7 @@ class Owner
   @@all = []
 
   def initialize(name)
-    @name = name 
+    @name = name
     @species = "human"
     @@all << self
   end
@@ -14,7 +14,7 @@ class Owner
     puts "I am a #{self.species}."
   end
 
-  def self.all 
+  def self.all
     @@all
   end
 
@@ -26,7 +26,7 @@ class Owner
     self.all.clear
   end
 
-  def cats 
+  def cats
     Cat.all.select {|cat| cat.owner == self}
   end
 
