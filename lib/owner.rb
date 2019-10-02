@@ -11,7 +11,7 @@ class Owner
   end
 
   def say_species
-    puts "I am a #{self.species}."
+    return "I am a #{self.species}."
   end
 
   def self.all
@@ -51,7 +51,7 @@ class Owner
   end
 
   def sell_pets
-    
+
   end
 
   def list_pets
